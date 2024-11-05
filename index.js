@@ -1,7 +1,8 @@
 const express = require('express');
+const router = express.Router();
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 app.use(express.json());
 
@@ -20,3 +21,5 @@ app.use('/payment', paymentRouter);
 // Orders
 const orderRouter = require ('./routes/order');
 app.use('/order', orderRouter);
+
+module.exports = router;
