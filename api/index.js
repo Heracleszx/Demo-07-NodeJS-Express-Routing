@@ -13,7 +13,8 @@ app.listen(PORT, () => {
 // Home Page
 app.get('/', (request, response) => {
     // response.status(200).json({ message: 'API Homepage' });
-    response.status(200).json({ message: 'Welcome to the API: <RAY JHON MANALO>' });
+    response.send('<h1>Welcome to API - Ray Jhon Manalo</h1>');
+
 });
 
 // Customers  
