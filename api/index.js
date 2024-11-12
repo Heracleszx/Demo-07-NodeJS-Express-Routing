@@ -14,6 +14,7 @@ app.listen(PORT, () => {
 app.get('/', (request, response) => {
     // response.status(200).json({ message: 'API Homepage' });
     response.send('<h1>API Homepage</h1>');
+    response.send('<h2>RAY JHON MANALO</h2>');
 });
 
 // Customers  
